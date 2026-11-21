@@ -106,7 +106,7 @@ CONSULTAS_ETIQUETADAS = [
     },
     {
         "consulta": "no tengo internet",
-        "tipo": "palabras clave pueden fallar (solo comparte 'no' / 'internet')",
+        "tipo": "palabras clave pueden fallar (empates por la palabra vacia 'no')",
         "relevantes": [14, 15],
     },
     {

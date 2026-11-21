@@ -1,0 +1,143 @@
+Cargando modelo de embeddings...
+Generando embeddings del corpus...
+Corpus: 25 oraciones
+Dimension de embeddings: 384
+Consultas: 8
+
+====================================================================================================
+CONSULTA: problemas con mi contraseña
+Tipo de caso: coincidencia parcial de palabras (contraseña) + sinonimos (clave)
+====================================================================================================
+
+Busqueda semantica
+  1. score=0.6721 | idx= 2 | El usuario desea cambiar su contraseña.
+  2. score=0.6134 | idx= 1 | Olvidé mi clave de acceso al sistema.
+  3. score=0.5657 | idx= 0 | No puedo iniciar sesión en mi cuenta.
+
+Busqueda por palabras clave
+  1. score=1 | idx= 0 | coincidencias=mi | No puedo iniciar sesión en mi cuenta.
+  2. score=1 | idx= 1 | coincidencias=mi | Olvidé mi clave de acceso al sistema.
+  3. score=1 | idx= 2 | coincidencias=contraseña | El usuario desea cambiar su contraseña.
+
+====================================================================================================
+CONSULTA: no puedo entrar a mi cuenta
+Tipo de caso: coincidencia directa de palabras
+====================================================================================================
+
+Busqueda semantica
+  1. score=0.7808 | idx= 0 | No puedo iniciar sesión en mi cuenta.
+  2. score=0.4962 | idx=20 | Los mensajes nuevos no llegan a mi bandeja de entrada.
+  3. score=0.4725 | idx= 9 | Necesito recuperar el acceso porque perdí mis credenciales.
+
+Busqueda por palabras clave
+  1. score=4 | idx= 0 | coincidencias=cuenta, mi, no, puedo | No puedo iniciar sesión en mi cuenta.
+  2. score=3 | idx=20 | coincidencias=a, mi, no | Los mensajes nuevos no llegan a mi bandeja de entrada.
+  3. score=2 | idx=19 | coincidencias=no, puedo | No puedo descargar los archivos adjuntos del correo.
+
+====================================================================================================
+CONSULTA: quiero cambiar mi email
+Tipo de caso: sin coincidencia directa, relacion semantica (email = correo)
+====================================================================================================
+
+Busqueda semantica
+  1. score=0.7833 | idx= 4 | El cliente quiere actualizar su correo electrónico.
+  2. score=0.5903 | idx= 2 | El usuario desea cambiar su contraseña.
+  3. score=0.5209 | idx=21 | Deseo modificar el número de teléfono asociado a mi perfil.
+
+Busqueda por palabras clave
+  1. score=2 | idx=13 | coincidencias=mi, quiero | Quiero cancelar mi plan y solicitar un reembolso.
+  2. score=1 | idx= 0 | coincidencias=mi | No puedo iniciar sesión en mi cuenta.
+  3. score=1 | idx= 1 | coincidencias=mi | Olvidé mi clave de acceso al sistema.
+
+====================================================================================================
+CONSULTA: el celular no abre la aplicación
+Tipo de caso: sinonimos (celular = telefono / movil)
+====================================================================================================
+
+Busqueda semantica
+  1. score=0.7869 | idx= 7 | La aplicación móvil no carga correctamente.
+  2. score=0.7544 | idx=11 | La app se cierra sola cada vez que la abro en el teléfono.
+  3. score=0.4592 | idx=20 | Los mensajes nuevos no llegan a mi bandeja de entrada.
+
+Busqueda por palabras clave
+  1. score=3 | idx= 7 | coincidencias=aplicación, la, no | La aplicación móvil no carga correctamente.
+  2. score=3 | idx=22 | coincidencias=el, la, no | La autenticación de dos factores no acepta el código.
+  3. score=3 | idx=23 | coincidencias=el, la, no | El servidor no responde y la página tarda mucho en cargar.
+
+====================================================================================================
+CONSULTA: me cobraron dos veces
+Tipo de caso: sin palabras compartidas, relacion semantica
+====================================================================================================
+
+Busqueda semantica
+  1. score=0.4546 | idx=12 | El cobro de la suscripción aparece duplicado en mi tarjeta.
+  2. score=0.3055 | idx=13 | Quiero cancelar mi plan y solicitar un reembolso.
+  3. score=0.2722 | idx= 5 | La factura fue enviada al correo registrado.
+
+Busqueda por palabras clave
+  1. score=1 | idx=22 | coincidencias=dos | La autenticación de dos factores no acepta el código.
+  2. score=0 | idx= 0 | coincidencias=sin coincidencias | No puedo iniciar sesión en mi cuenta.
+  3. score=0 | idx= 1 | coincidencias=sin coincidencias | Olvidé mi clave de acceso al sistema.
+
+====================================================================================================
+CONSULTA: el equipo no funciona
+Tipo de caso: consulta ambigua (equipo = computadora, router, impresora...)
+====================================================================================================
+
+Busqueda semantica
+  1. score=0.3732 | idx= 3 | La plataforma muestra un error al iniciar sesión.
+  2. score=0.3288 | idx= 0 | No puedo iniciar sesión en mi cuenta.
+  3. score=0.3063 | idx= 1 | Olvidé mi clave de acceso al sistema.
+
+Busqueda por palabras clave
+  1. score=2 | idx=10 | coincidencias=el, no | No recibo el código de verificación por mensaje de texto.
+  2. score=2 | idx=22 | coincidencias=el, no | La autenticación de dos factores no acepta el código.
+  3. score=2 | idx=23 | coincidencias=el, no | El servidor no responde y la página tarda mucho en cargar.
+
+====================================================================================================
+CONSULTA: no tengo internet
+Tipo de caso: palabras clave pueden fallar (empates por la palabra vacia 'no')
+====================================================================================================
+
+Busqueda semantica
+  1. score=0.4792 | idx= 9 | Necesito recuperar el acceso porque perdí mis credenciales.
+  2. score=0.4589 | idx= 1 | Olvidé mi clave de acceso al sistema.
+  3. score=0.4526 | idx=14 | La conexión a internet es muy lenta en la oficina.
+
+Busqueda por palabras clave
+  1. score=1 | idx= 0 | coincidencias=no | No puedo iniciar sesión en mi cuenta.
+  2. score=1 | idx= 7 | coincidencias=no | La aplicación móvil no carga correctamente.
+  3. score=1 | idx=10 | coincidencias=no | No recibo el código de verificación por mensaje de texto.
+
+====================================================================================================
+CONSULTA: no me llega el SMS para entrar
+Tipo de caso: abreviatura / jerga (SMS = mensaje de texto)
+====================================================================================================
+
+Busqueda semantica
+  1. score=0.7304 | idx=20 | Los mensajes nuevos no llegan a mi bandeja de entrada.
+  2. score=0.6353 | idx=10 | No recibo el código de verificación por mensaje de texto.
+  3. score=0.5530 | idx= 0 | No puedo iniciar sesión en mi cuenta.
+
+Busqueda por palabras clave
+  1. score=2 | idx=10 | coincidencias=el, no | No recibo el código de verificación por mensaje de texto.
+  2. score=2 | idx=22 | coincidencias=el, no | La autenticación de dos factores no acepta el código.
+  3. score=2 | idx=23 | coincidencias=el, no | El servidor no responde y la página tarda mucho en cargar.
+
+====================================================================================================
+EVALUACION (P@3 y MRR con juicios de relevancia manuales)
+====================================================================================================
+Consulta                             | Sem P@k | Sem RR | Kw P@k | Kw RR
+---------------------------------------------------------------------------
+problemas con mi contraseña          |    0.67 |   1.00 |   0.67 |  0.50
+no puedo entrar a mi cuenta          |    0.67 |   1.00 |   0.33 |  1.00
+quiero cambiar mi email              |    0.33 |   1.00 |   0.00 |  0.00
+el celular no abre la aplicación     |    0.67 |   1.00 |   0.33 |  1.00
+me cobraron dos veces                |    0.33 |   1.00 |   0.00 |  0.00
+el equipo no funciona                |    0.00 |   0.00 |   0.00 |  0.00
+no tengo internet                    |    0.33 |   0.33 |   0.00 |  0.00
+no me llega el SMS para entrar       |    0.33 |   0.50 |   0.67 |  1.00
+---------------------------------------------------------------------------
+PROMEDIO                             |    0.42 |   0.73 |   0.25 |  0.44
+
+Nota: en keyword search los resultados con score=0 se cuentan como no relevantes.
